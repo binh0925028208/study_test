@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --background-color: #F6F6F7;
+    --submenu-text-color: gray;
+    --button-color: #38a3f0;
+    --advertise-background-color: #E8E8EA;
+}
+
+body {
+    margin: 0 250px 50px 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    padding: 30px;
+
+    .logo {
+        font-weight: 800;
+    }
+
+    .sub_menu {
+        display: flex;
+        justify-content: space-around;
+        color: var(--submenu-text-color);
+        font-size: 80%;
+
+        .navigate:hover {
+            cursor: pointer;
+            color: var(--button-color);
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .banner {
+        height: 450px;
+        background-image: url(https://assets.mailshake.com/wp-content/uploads/2021/11/10084217/1489380_Blog-Image_10_110922.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+
+        .cover {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+
+        }
+    }
+
+    .latest_post {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0;
+
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+
+            .post_content {
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+
+                .post_content_img {
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 10px;
+                    }
+                }
+
+                .tag {
+                    p {
+                        width: fit-content;
+                        color: #38a3f0;
+                        padding: 5px 10px;
+                        background-color: var(--advertise-background-color);
+                        border-radius: 10px;
+                        font-size: 70%;
+                    }
+
+                }
+
+                .post_title {
+                    font-weight: 600;
+                    font-size: large;
+                }
+
+                .user {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    color: var(--submenu-text-color);
+                    font-size: 90%;
+
+                    .avatar {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border: 1px solid gray;
+            background-color: transparent;
+            border-radius: 10px;
+            opacity: 0.8;
+            align-self: center;
+        }
+
+        button:hover {
+            background-color: var(--button-color);
+            cursor: pointer;
+            color: white;
+        }
+    }
+
+    .advertise {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+        font-size: 90%;
+
+        b {
+            font-size: large;
+        }
+
+        .box {
+            background-color: var(--advertise-background-color);
+            height: 100px;
+            width: 600px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+    }
+}
+
+footer {
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    padding: 30px;
+    gap: 30px;
+
+    .footer_column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .footer_column_content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 80%;
+            color: var(--submenu-text-color);
+            justify-content: flex-end;
+
+            .footer_navigate:hover {
+                color: #38a3f0;
+                cursor: pointer;
+
+            }
+        }
+
+        .weekly_box {
+            background-color: white;
+            flex-direction: column;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 10px;
+
+            .weekly_title {
+                font-size: 80%;
+                color: var(--submenu-text-color);
+            }
+
+            .email_box {
+                border: 1px solid gray;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 5px;
+                padding: 5px;
+                width: 100%;
+
+
+                input {
+                    border: none;
+                    padding: 5px;
+                }
+
+                img {
+                    width: 25px;
+                }
+
+            }
+
+            button {
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(75, 107, 251);
+                color: white;
+            }
+
+            button:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                color: rgb(75, 107, 251);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}

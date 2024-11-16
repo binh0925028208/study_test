@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+header {
+    background-image: url(https://img.freepik.com/premium-photo/sunset-with-palm-tree-sunset-water_1303517-4927.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+    .submenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        color: white;
+
+        .submenu_button {
+            display: none;
+        }
+
+        .logo {
+            img {
+                width: 4em;
+                border-radius: 50%;
+            }
+        }
+
+        .navigator {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            li:hover {
+                cursor: pointer;
+                color: rgb(38, 105, 248);
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transform: translateY(20%);
+
+        .banner_title {
+            font-weight: 600;
+            color: white;
+            font-size: 150%;
+        }
+    }
+}
+
+main {
+    margin: 10%;
+
+    .main_container_first {
+        .main_container_first_title {
+            text-align: center;
+            font-size: 150%;
+        }
+
+        .main_container_first_banner {
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .main_container_first_box {
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIcNCnKDk7K2_nnG1JNxVv0H6IGnOTE3-mw&s);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border-radius: 10px;
+
+                .step {
+                    width: 0;
+                    height: 0;
+                    border-left: 6em solid rgb(0, 51, 128);
+                    border-right: 6em solid transparent;
+                    border-bottom: 6em solid transparent;
+                    position: relative;
+                }
+
+                .step p {
+                    position: absolute;
+                    top: 10px;
+                    right: 40px;
+                    margin: 0;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .main_container_first_box_content {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    color: white;
+
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-height: 3em;
+                        line-height: 1.5em;
+                    }
+
+                    .main_container_first_box_title {
+                        font-size: 150%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .main_container_user {
+        margin-top: 10%;
+
+        .main_container_user_title {
+            text-align: center;
+            font-size: 150%;
+        }
+
+        .main_container_user_list {
+            display: grid;
+            gap: 20px;
+            margin-top: 5%;
+            justify-content: center;
+            align-items: center;
+
+            .main_container_user_person {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .user_avatar {
+                    position: relative;
+
+                    img {
+                        width: 6em;
+                        height: 6em;
+                        border-radius: 50%;
+                    }
+
+                    .user_icon {
+                        background-color: red;
+                        width: 2em;
+                        padding: 5px;
+                        border-radius: 50%;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: -5%;
+                        right: -5%;
+                    }
+                }
+
+                .person_name {
+                    color: rgb(45, 159, 235);
+                    font-weight: 800;
+                }
+
+                .person_address {
+                    display: inline-block;
+                    text-align: center;
+                    max-width: 10em;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
+
+    .main_container_discover {
+        margin-top: 10%;
+        background-color: #232731;
+        border-radius: 10px;
+        padding: 20px;
+
+        .main_container_discover_title {
+            text-align: center;
+            font-size: 150%;
+            color: white;
+        }
+
+        .main_container_discover_banner {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+
+            .banner_1,
+            .banner_2,
+            .banner_3,
+            .banner_4,
+            .banner_5,
+            .banner_6,
+            .banner_7 {
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border-radius: 10px;
+            }
+
+            .banner_1 {
+                background-image: url(https://img.freepik.com/free-photo/girls-taking-selfie-beach_23-2147813472.jpg);
+                grid-area: a;
+            }
+
+            .banner_2 {
+                background-image: url(https://www.shutterstock.com/image-photo/happy-young-man-taking-selfie-260nw-2436315087.jpg);
+                grid-area: b;
+            }
+
+            .banner_3 {
+                background-image: url(https://media.istockphoto.com/id/506508780/photo/the-best-memories-are-made-on-the-beach.jpg?s=612x612&w=0&k=20&c=RJYfrzQQnFXGttUssqsOPqJuZtmIQDZZL_UkVo4weuE=);
+                grid-area: c;
+            }
+
+            .banner_4 {
+                background-image: url(https://media.istockphoto.com/id/506508780/photo/the-best-memories-are-made-on-the-beach.jpg?s=612x612&w=0&k=20&c=RJYfrzQQnFXGttUssqsOPqJuZtmIQDZZL_UkVo4weuE=);
+                grid-area: d;
+            }
+
+            .banner_5 {
+                background-image: url(https://pikwizard.com/pw/medium/80c8a9421f9fe82f714d2a5289ed1d2a.jpg);
+                grid-area: e;
+            }
+
+            .banner_6 {
+                background-image: url(https://www.shutterstock.com/shutterstock/photos/276467504/display_1500/stock-photo-group-of-four-male-friend-taking-a-selfie-at-the-beach-276467504.jpg);
+                grid-area: f;
+            }
+
+            .banner_7 {
+                background-image: url(https://c8.alamy.com/comp/K70JNR/young-people-group-on-beach-summer-vacation-two-couple-happy-smiling-K70JNR.jpg);
+                grid-area: g;
+            }
+
+        }
+    }
+
+    .main_container_ratting {
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+
+        .ratting_title {
+            font-size: 150%;
+            font-weight: 600;
+            color: black;
+        }
+
+        .ratting_comment {
+            font-size: 80%;
+            color: grey;
+            display: inline-block;
+            text-align: center;
+            max-width: 50em;
+            word-wrap: break-word;
+        }
+
+        .ratting_user {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+            img {
+                width: 7em;
+                border-radius: 50%;
+            }
+        }
+
+        .ratting_interest {
+            display: flex;
+            gap: 10px;
+            width: 60%;
+
+            input {
+                flex: 1;
+                padding: 10px;
+                width: 100%;
+            }
+
+            button {
+                padding: 10px;
+                border: 1px solid rgb(132, 188, 234);
+                background-color: transparent;
+                border-radius: 10px;
+                color: blue;
+                font-weight: 800;
+                text-wrap: nowrap;
+            }
+        }
+
+    }
+}
+
+footer {
+    background-color: #091445;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+
+    .footer_column_content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .footer_navigate {
+            color: gray;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .main_container_user_list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main_container_discover_banner {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 55em;
+        grid-template-areas:
+            "a b c"
+            "d e e"
+            "f f g";
+
+    }
+
+
+}
+
+@media only screen and (min-width: 741px) and (max-width: 1024px) {
+
+    .main_container_user_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        .main_container_first {
+            .main_container_first_banner {
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-basis: calc(50% - 10px);
+            }
+
+        }
+
+        .main_container_discover_banner {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            height: 55em;
+            grid-template-areas:
+                "a b "
+                "c d "
+                "e f "
+                "g g ";
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        .submenu {
+
+            .navigator {
+                display: none;
+            }
+
+            .submenu_button {
+                display: block;
+            }
+        }
+    }
+
+    .main_container_first_banner {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: calc(50% - 10px);
+
+    }
+
+    .main_container_discover_banner {
+        grid-template-rows: repeat(7, 1fr);
+        height: 55em;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+
+    }
+
+    .ratting_interest {
+        flex-direction: column;
+
+        input {
+            flex: 1;
+        }
+
+        button {
+            flex: 1;
+        }
+    }
+}
